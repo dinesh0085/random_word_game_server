@@ -19,6 +19,7 @@ app.get('/',(req,res)=>{
 
 app.get("/randomword",async(req,res)=>{
     let id=await randomIntegerFunction();
+    console.log(id);
     id=id.toString()
      const randomObj=await randomModel.find()
     

@@ -11,7 +11,8 @@ const userSchema=new mongoose.Schema({
     },
     score:{
         type:Number,
-        required:true
+        required:true,
+        default:0
     }
 },{timestamps:true,versionKey:false})
 
